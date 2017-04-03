@@ -16,7 +16,7 @@ import { NoServiceFoundComponent } from './components/no-service-found/no-servic
 import { TaskListComponent } from './components/derived-class/task-list/task-list.component';
 import { TaskListOrderedComponent } from './components/derived-class/task-list-ordered/task-list-ordered.component';
 
-
+import { ChildDataService } from './services/use-class';
 
 @NgModule({
   declarations: [
@@ -37,6 +37,7 @@ import { TaskListOrderedComponent } from './components/derived-class/task-list-o
     HttpModule
   ],
   providers: [
+    ChildDataService
   ],
   bootstrap: [AppComponent]
 })
