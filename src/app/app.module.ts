@@ -15,8 +15,10 @@ import { ClassDemoComponent } from './components/class-demo/class-demo.component
 import { NoServiceFoundComponent } from './components/no-service-found/no-service-found.component';
 import { TaskListComponent } from './components/derived-class/task-list/task-list.component';
 import { TaskListOrderedComponent } from './components/derived-class/task-list-ordered/task-list-ordered.component';
+import { ForwardRefDemoComponent } from './components/forward-ref-demo/forward-ref-demo.component';
 
 import { ChildDataService } from './services/use-class';
+import { DoorService, LockService } from './services/forward-ref/two-services';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ChildDataService } from './services/use-class';
     ClassDemoComponent,
     NoServiceFoundComponent,
     TaskListComponent,
-    TaskListOrderedComponent
+    TaskListOrderedComponent,
+    ForwardRefDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { ChildDataService } from './services/use-class';
     HttpModule
   ],
   providers: [
-    ChildDataService
+    ChildDataService,
+    DoorService,
+    LockService
   ],
   bootstrap: [AppComponent]
 })
