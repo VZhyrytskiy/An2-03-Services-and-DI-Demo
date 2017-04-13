@@ -40,7 +40,6 @@ import { DoorService, LockService } from './services/forward-ref/two-services';
     HttpModule
   ],
   providers: [
-    ChildDataService,
     DoorService,
     LockService
   ],
