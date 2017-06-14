@@ -1,7 +1,9 @@
-import { OpaqueToken } from '@angular/core';
+import { OpaqueToken, InjectionToken } from '@angular/core';
 import { DataService } from './../common';
 
-export const Data_Top3 = new OpaqueToken('DataTop3');
+// OpaqueToken is deprecated since v4.0.0
+// export const Data_Top3 = new OpaqueToken('DataTop3');
+export const Data_Top3 = new InjectionToken<any[]>('DataTop3');
 
 export function DataTopNFactory(take: number) {
 

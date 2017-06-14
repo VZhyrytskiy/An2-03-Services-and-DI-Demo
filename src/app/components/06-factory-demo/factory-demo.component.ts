@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 
-import { DataTopNFactory, Data_Top3 } from './../../services/use-factory';
-import { DataService } from './../../services/common';
+import { DataTopNFactory, Data_Top3, DataService } from './../../services';
 
 @Component({
   selector: 'app-factory-demo',

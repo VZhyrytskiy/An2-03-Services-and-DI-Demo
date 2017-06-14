@@ -1,6 +1,6 @@
 import { Component, OnInit, Host, Optional, SkipSelf } from '@angular/core';
 
-import { DataService, ChildDataService } from './../../services/use-class';
+import { DataService, ChildDataService } from './../../services';
 
 @Component({
   selector: 'app-no-service-found',
