@@ -1,5 +1,5 @@
 import { OpaqueToken, InjectionToken } from '@angular/core';
-import { DataService } from './../common';
+import { DataService } from '.';
 
 // OpaqueToken is deprecated since v4.0.0
 // export const Data_Top3 = new OpaqueToken('DataTop3');
