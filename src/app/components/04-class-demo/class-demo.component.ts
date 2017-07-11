@@ -7,7 +7,7 @@ import { DataService, ChildDataService } from './../../services';
   templateUrl: './class-demo.component.html',
   styleUrls: ['./class-demo.component.css'],
   providers: [
-    { provide: DataService, useClass: ChildDataService },
+    { provide: DataService, useClass: ChildDataService }
   ]
 })
 export class ClassDemoComponent implements OnInit {

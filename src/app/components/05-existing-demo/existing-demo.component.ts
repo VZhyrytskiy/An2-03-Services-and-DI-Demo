@@ -14,7 +14,7 @@ import { LoggerService, MyLoggerService } from './../../services';
 export class ExistingDemoComponent implements OnInit {
 
  constructor(
-    private myLoggerService: MyLoggerService,
+    private myLoggerService: MyLoggerService
   ) {}
 
   ngOnInit() {

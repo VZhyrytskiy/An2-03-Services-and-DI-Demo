@@ -7,6 +7,8 @@ import {
 TaskListComponent, TaskListOrderedComponent, ForwardRefDemoComponent
 } from '.';
 
+import { HighlightDirective } from './../directives/highlight.directive';
+
 @NgModule({
   imports: [
     CommonModule
@@ -20,7 +22,8 @@ TaskListComponent, TaskListOrderedComponent, ForwardRefDemoComponent
     NoServiceFoundComponent,
     TaskListComponent,
     TaskListOrderedComponent,
-    ForwardRefDemoComponent
+    ForwardRefDemoComponent,
+    HighlightDirective
   ],
   exports: [
     NoServiceFoundComponent,

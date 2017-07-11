@@ -8,6 +8,7 @@ export class DoorService {
   // forwardRef makes this possible.
   constructor(
     @Inject(forwardRef(() => LockService)) public lock: LockService)
+    // public lock: LockService)
   { }
 }
 
