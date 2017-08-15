@@ -11,3 +11,5 @@ export * from './07-derived-class/task-list/task-list.component';
 export * from './07-derived-class/task-list-ordered/task-list-ordered.component';
 
 export * from './08-forward-ref-demo/forward-ref-demo.component';
+
+export * from './09-multiprovider-demo/multiprovider-demo.component';

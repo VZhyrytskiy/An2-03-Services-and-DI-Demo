@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import {
   ElementRefDemoComponent, FactoryDemoComponent, ExistingDemoComponent,
   ValueDemoComponent, ClassDemoComponent, NoServiceFoundComponent,
-TaskListComponent, TaskListOrderedComponent, ForwardRefDemoComponent
+TaskListComponent, TaskListOrderedComponent, ForwardRefDemoComponent, MultiproviderDemoComponent
 } from '.';
 
 import { HighlightDirective } from './../directives/highlight.directive';
+
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { HighlightDirective } from './../directives/highlight.directive';
     TaskListComponent,
     TaskListOrderedComponent,
     ForwardRefDemoComponent,
-    HighlightDirective
+    HighlightDirective,
+    MultiproviderDemoComponent
   ],
   exports: [
     NoServiceFoundComponent,
@@ -34,7 +36,8 @@ import { HighlightDirective } from './../directives/highlight.directive';
     FactoryDemoComponent,
     TaskListComponent,
     TaskListOrderedComponent,
-    ForwardRefDemoComponent
+    ForwardRefDemoComponent,
+    MultiproviderDemoComponent
   ]
 })
 export class ComponentsModule { }
