@@ -23,7 +23,7 @@ export class ValueDemoComponent implements OnInit {
   content: string;
 
   constructor(
-    @Inject(TITLE) private ttl: string,
+    @Inject(TITLE) public ttl: string,
     private dsIn: DataService,
   ) { }
 
