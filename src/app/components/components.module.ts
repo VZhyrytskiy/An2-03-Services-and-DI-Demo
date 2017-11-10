@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import {
   ElementRefDemoComponent, FactoryDemoComponent, ExistingDemoComponent,
   ValueDemoComponent, ClassDemoComponent, NoServiceFoundComponent,
-TaskListComponent, TaskListOrderedComponent, ForwardRefDemoComponent, MultiproviderDemoComponent
-} from '.';
+TaskListComponent, TaskListOrderedComponent, ForwardRefDemoComponent, MultiproviderDemoComponent,
+HostDemoComponent, SomeDirDirective } from '.';
 
 import { HighlightDirective } from './../directives/highlight.directive';
 
@@ -25,7 +25,9 @@ import { HighlightDirective } from './../directives/highlight.directive';
     TaskListOrderedComponent,
     ForwardRefDemoComponent,
     HighlightDirective,
-    MultiproviderDemoComponent
+    MultiproviderDemoComponent,
+    HostDemoComponent,
+    SomeDirDirective
   ],
   exports: [
     NoServiceFoundComponent,
@@ -37,7 +39,8 @@ import { HighlightDirective } from './../directives/highlight.directive';
     TaskListComponent,
     TaskListOrderedComponent,
     ForwardRefDemoComponent,
-    MultiproviderDemoComponent
+    MultiproviderDemoComponent,
+    HostDemoComponent
   ]
 })
 export class ComponentsModule { }
