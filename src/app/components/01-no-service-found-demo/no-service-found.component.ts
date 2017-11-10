@@ -22,6 +22,8 @@ export class NoServiceFoundComponent implements OnInit {
     private s2: ChildDataService,
     // Case 4
     @SkipSelf() @Optional() private s3: ChildDataService,
+    // Case 4
+    // @Host() @Optional() private s3: ChildDataService,
   ) { }
 
   ngOnInit() {
@@ -29,7 +31,7 @@ export class NoServiceFoundComponent implements OnInit {
     const s2 = this.s2 ? this.s2.getData() : 'Service s2 not found.';
     const s3 = this.s3 ? this.s3.getData() : 'Service s3 not found.';
 
-    this.content = `${s1} ${s2} ${s3}`;
+    this.content = `s1: ${s1}<br> s2: ${s2}<br>s3: ${s3}`;
   }
 
 }
