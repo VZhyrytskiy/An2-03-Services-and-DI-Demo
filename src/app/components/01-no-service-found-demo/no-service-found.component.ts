@@ -15,7 +15,7 @@ export class NoServiceFoundComponent implements OnInit {
 
   constructor(
     // Case 1
-    // private s0: DataService,  //No provider for DataService
+    // private s0: DataService,  // No provider for DataService
     // Case 2
     @Optional() private s1: DataService,
     // Case 3
