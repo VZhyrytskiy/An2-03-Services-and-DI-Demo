@@ -2,18 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {
-  ElementRefDemoComponent, FactoryDemoComponent, ExistingDemoComponent,
-  ValueDemoComponent, ClassDemoComponent, NoServiceFoundComponent,
-TaskListComponent, TaskListOrderedComponent, ForwardRefDemoComponent, MultiproviderDemoComponent,
-HostDemoComponent, SomeDirDirective } from '.';
+  ElementRefDemoComponent,
+  FactoryDemoComponent,
+  ExistingDemoComponent,
+  ValueDemoComponent,
+  ClassDemoComponent,
+  NoServiceFoundComponent,
+  TaskListComponent,
+  TaskListOrderedComponent,
+  ForwardRefDemoComponent,
+  MultiproviderDemoComponent,
+  HostDemoComponent,
+  SomeDirDirective
+} from '.';
 
-import { HighlightDirective } from './../directives/highlight.directive';
-
+import { Highlight1Directive, Highlight2Directive } from './../directives';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   declarations: [
     ElementRefDemoComponent,
     FactoryDemoComponent,
@@ -24,7 +30,8 @@ import { HighlightDirective } from './../directives/highlight.directive';
     TaskListComponent,
     TaskListOrderedComponent,
     ForwardRefDemoComponent,
-    HighlightDirective,
+    Highlight1Directive,
+    Highlight2Directive,
     MultiproviderDemoComponent,
     HostDemoComponent,
     SomeDirDirective
@@ -43,4 +50,4 @@ import { HighlightDirective } from './../directives/highlight.directive';
     HostDemoComponent
   ]
 })
-export class ComponentsModule { }
+export class ComponentsModule {}
