@@ -11,11 +11,11 @@ export class SomeDirDirective implements OnInit {
      @Host() @Optional() private ds: DataService
 
     // Host комонент - это обычно компонент, который запрашивает записимость
-    // но длякомпонента, который проецируется, это компонент, в который он проецируется
+    // но для компонента, который проецируется, это компонент, в который он проецируется
   ) { }
 
   ngOnInit() {
-    console.log(this.ds ? this.ds.getData(): 'null');
+    console.log(this.ds ? this.ds.getData() : 'null');
   }
 
 }
