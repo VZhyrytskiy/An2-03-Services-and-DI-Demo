@@ -11,7 +11,7 @@ import {
   TaskListComponent,
   TaskListOrderedComponent,
   ForwardRefDemoComponent,
-  MultiproviderDemoComponent,
+  MProviderDemoComponent,
   HostDemoComponent,
   SomeDirDirective,
   ProvidedInDemoComponent
@@ -33,7 +33,7 @@ import { Highlight1Directive, Highlight2Directive } from './../directives';
     ForwardRefDemoComponent,
     Highlight1Directive,
     Highlight2Directive,
-    MultiproviderDemoComponent,
+    MProviderDemoComponent,
     HostDemoComponent,
     SomeDirDirective,
     ProvidedInDemoComponent
@@ -48,7 +48,7 @@ import { Highlight1Directive, Highlight2Directive } from './../directives';
     TaskListComponent,
     TaskListOrderedComponent,
     ForwardRefDemoComponent,
-    MultiproviderDemoComponent,
+    MProviderDemoComponent,
     HostDemoComponent,
     ProvidedInDemoComponent
   ]
