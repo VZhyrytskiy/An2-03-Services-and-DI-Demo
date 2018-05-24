@@ -13,7 +13,8 @@ import {
   ForwardRefDemoComponent,
   MultiproviderDemoComponent,
   HostDemoComponent,
-  SomeDirDirective
+  SomeDirDirective,
+  ProvidedInDemoComponent
 } from '.';
 
 import { Highlight1Directive, Highlight2Directive } from './../directives';
@@ -34,7 +35,8 @@ import { Highlight1Directive, Highlight2Directive } from './../directives';
     Highlight2Directive,
     MultiproviderDemoComponent,
     HostDemoComponent,
-    SomeDirDirective
+    SomeDirDirective,
+    ProvidedInDemoComponent
   ],
   exports: [
     NoServiceFoundComponent,
@@ -47,7 +49,8 @@ import { Highlight1Directive, Highlight2Directive } from './../directives';
     TaskListOrderedComponent,
     ForwardRefDemoComponent,
     MultiproviderDemoComponent,
-    HostDemoComponent
+    HostDemoComponent,
+    ProvidedInDemoComponent
   ]
 })
 export class ComponentsModule {}
