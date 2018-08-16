@@ -14,10 +14,12 @@ import {
   MProviderDemoComponent,
   HostDemoComponent,
   SomeDirDirective,
-  ProvidedInDemoComponent
+  ProvidedInDemoComponent,
+  NgOnDestroyComponent
 } from '.';
 
-import { Highlight1Directive, Highlight2Directive } from './../directives';
+import { Highlight1Directive, Highlight2Directive } from '../directives';
+import { DemoComponent } from './12-ngOnDestroy-demo/demo.component';
 
 @NgModule({
   imports: [CommonModule],
@@ -36,7 +38,9 @@ import { Highlight1Directive, Highlight2Directive } from './../directives';
     MProviderDemoComponent,
     HostDemoComponent,
     SomeDirDirective,
-    ProvidedInDemoComponent
+    ProvidedInDemoComponent,
+    NgOnDestroyComponent,
+    DemoComponent
   ],
   exports: [
     NoServiceFoundComponent,
@@ -50,7 +54,8 @@ import { Highlight1Directive, Highlight2Directive } from './../directives';
     ForwardRefDemoComponent,
     MProviderDemoComponent,
     HostDemoComponent,
-    ProvidedInDemoComponent
+    ProvidedInDemoComponent,
+    NgOnDestroyComponent
   ]
 })
 export class ComponentsModule {}

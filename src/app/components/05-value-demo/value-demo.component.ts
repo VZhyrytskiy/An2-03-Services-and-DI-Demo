@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, InjectionToken } from '@angular/core';
 
-import { DataService } from './../../services';
+import { DataService } from '../../services';
 
 const TITLE = new InjectionToken<string>('title');
 const dsInst = new DataService();

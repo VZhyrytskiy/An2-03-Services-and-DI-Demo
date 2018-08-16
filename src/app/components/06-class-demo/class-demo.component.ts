@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DataService, ChildDataService } from './../../services';
+import { DataService, ChildDataService } from '../../services';
 
 @Component({
   selector: 'app-class-demo',

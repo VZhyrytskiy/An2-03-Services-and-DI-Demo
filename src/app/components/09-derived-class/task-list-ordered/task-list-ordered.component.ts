@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { TaskListComponent } from './../task-list/task-list.component';
-import { TaskService } from './../../../services';
+import { TaskListComponent } from '../task-list/task-list.component';
+import { TaskService } from '../../../services';
 
 @Component({
   selector: 'app-task-list-ordered',

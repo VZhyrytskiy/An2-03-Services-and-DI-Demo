@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { DoorService } from './../../services';
+import { DoorService } from '../../services';
 
 @Component({
   selector: 'app-forward-ref-demo',
