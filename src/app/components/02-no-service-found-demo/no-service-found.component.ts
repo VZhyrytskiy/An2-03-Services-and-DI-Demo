@@ -6,25 +6,26 @@ import { DataService, ChildDataService } from '../../services';
   selector: 'app-no-service-found',
   templateUrl: './no-service-found.component.html',
   styleUrls: ['./no-service-found.component.css'],
-  providers: [
-    ChildDataService
-  ]
+  providers: [ChildDataService]
 })
 export class NoServiceFoundComponent implements OnInit {
   content: string;
 
   constructor(
     // Case 1
-    // private s0: DataService,  // No provider for DataService
+    // private s0: DataService, // No provider for DataService
     // Case 2
     @Optional() private s1: DataService,
     // Case 3
     private s2: ChildDataService,
-    // Case 4
-    @SkipSelf() @Optional() private s3: ChildDataService,
-    // Case 4
-    // @Host() @Optional() private s3: ChildDataService,
-  ) { }
+    @Host()
+    @Optional()
+    private s3: ChildDataService
+  ) // Case 4
+  // @SkipSelf()
+  // @Optional()
+  // private s3: ChildDataService
+  {}
 
   ngOnInit() {
     const s1 = this.s1 ? this.s1.getData() : 'Service s1 not found.';
@@ -33,5 +34,4 @@ export class NoServiceFoundComponent implements OnInit {
 
     this.content = `s1: ${s1}<br> s2: ${s2}<br>s3: ${s3}`;
   }
-
 }
