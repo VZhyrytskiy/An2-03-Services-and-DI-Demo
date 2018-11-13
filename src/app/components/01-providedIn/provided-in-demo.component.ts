@@ -5,7 +5,7 @@ import { BookService } from './book.service';
   selector: 'app-provided-in-demo',
   template: `
     <p>
-      provided-in-demo works!<br>
+      provided-in-demo works!<br />
       Look at bundle size.
     </p>
   `,
@@ -13,8 +13,8 @@ import { BookService } from './book.service';
 })
 export class ProvidedInDemoComponent implements OnInit {
   // The size of main.js bundle is less when the service is not injected
-  constructor() { }
-  // constructor(public bookService: BookService) {}
+  // constructor() { }
+  constructor(public bookService: BookService) {}
 
   ngOnInit() {}
 }

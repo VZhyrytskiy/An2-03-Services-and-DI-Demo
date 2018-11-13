@@ -13,8 +13,7 @@ import { LoggerService, MyLoggerService, DataService } from '../../services';
   ]
 })
 export class ExistingDemoComponent implements OnInit {
-
- constructor(
+  constructor(
     private loggerService: LoggerService,
     private logService: DataService,
     private myLoggerService: MyLoggerService
@@ -26,5 +25,4 @@ export class ExistingDemoComponent implements OnInit {
     console.log(Object.is(this.logService, this.myLoggerService));
     this.myLoggerService.log(123);
   }
-
 }
