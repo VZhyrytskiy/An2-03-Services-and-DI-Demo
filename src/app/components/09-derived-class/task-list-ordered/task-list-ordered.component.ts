@@ -12,14 +12,11 @@ import { TaskService } from '../../../services';
 export class TaskListOrderedComponent extends TaskListComponent {
   constructor(taskService: TaskService) {
     super(taskService);
-   }
-
-  afterGetTasks() {
-     this.tasks = this.tasks.sort((t1, t2) => {
-      return t1.action < t2.action ? -1 :
-         (t1.action > t2.action ? 1 : 0);
-    });
-
   }
 
+  afterGetTasks() {
+    this.tasks = this.tasks.sort((t1, t2) => {
+      return t1.action < t2.action ? -1 : t1.action > t2.action ? 1 : 0;
+    });
+  }
 }

@@ -6,19 +6,14 @@ import { DataService, ChildDataService } from '../../services';
   selector: 'app-class-demo',
   templateUrl: './class-demo.component.html',
   styleUrls: ['./class-demo.component.css'],
-  providers: [
-    { provide: DataService, useClass: ChildDataService }
-  ]
+  providers: [{ provide: DataService, useClass: ChildDataService }]
 })
 export class ClassDemoComponent implements OnInit {
   content: string;
 
-  constructor(
-    private dataService: DataService,
-  ) { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
     this.content = this.dataService.getData();
   }
-
 }
