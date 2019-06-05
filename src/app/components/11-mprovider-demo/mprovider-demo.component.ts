@@ -1,6 +1,6 @@
 import { Component, OnInit, InjectionToken, Inject } from '@angular/core';
 
-const MyToken = new InjectionToken<any>('token');
+const MyToken = new InjectionToken<string[]>('token');
 
 @Component({
   selector: 'app-mprovider-demo',
@@ -13,7 +13,8 @@ const MyToken = new InjectionToken<any>('token');
 })
 export class MProviderDemoComponent implements OnInit {
   content = '';
-  constructor(@Inject(MyToken) private services: any[]) {}
+
+  constructor(@Inject(MyToken) private services: string[]) {}
 
   ngOnInit() {
     this.content = `${this.services[0]} ${this.services[1]}`;
