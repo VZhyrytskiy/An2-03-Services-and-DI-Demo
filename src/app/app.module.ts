@@ -5,8 +5,6 @@ import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 
-import { DoorService, LockService } from './services';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,10 +12,6 @@ import { DoorService, LockService } from './services';
   imports: [
     BrowserModule,
     ComponentsModule
-  ],
-  providers: [
-    DoorService,
-    LockService
   ],
   bootstrap: [AppComponent]
 })
