@@ -1,9 +1,8 @@
 import { Component, OnInit, Inject, InjectionToken } from '@angular/core';
 
-import { DataService } from '../../services';
+import { ArrayDataService, adsInstance } from '../../services';
 
 const TITLE = new InjectionToken<string>('title');
-const dsInst = new DataService();
 
 @Component({
   selector: 'app-value-demo',
@@ -11,7 +10,7 @@ const dsInst = new DataService();
   styleUrls: ['./value-demo.component.css'],
   providers: [
     { provide: TITLE, useValue: 'Application' },
-    { provide: DataService, useValue: dsInst },
+    { provide: ArrayDataService, useValue: adsInstance }
   ]
 })
 export class ValueDemoComponent implements OnInit {
@@ -19,11 +18,10 @@ export class ValueDemoComponent implements OnInit {
 
   constructor(
     @Inject(TITLE) public ttl: string,
-    private dsIn: DataService,
-  ) { }
+    private adsIn: ArrayDataService
+  ) {}
 
   ngOnInit() {
-    this.content = this.dsIn.getAllData().toString();
+    this.content = this.adsIn.getAllData().toString();
   }
-
 }
