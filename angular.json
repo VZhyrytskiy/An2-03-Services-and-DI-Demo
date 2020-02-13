@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "services-and-di"
+    }
+  },
+  "defaultProject": "services-and-di",
+  "cli": {
+    "analytics": false
+  }
 }
