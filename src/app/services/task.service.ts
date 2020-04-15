@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 
+export interface TaskModel {
+  action: string;
+  done: boolean;
+}
+
 @Injectable()
 export class TaskService {
 
-  constructor() { }
-
-  getTasks() {
+  getTasks(): TaskModel[] {
     return [
       { action: 'Estimate', done: false },
       { action: 'Create', done: false },

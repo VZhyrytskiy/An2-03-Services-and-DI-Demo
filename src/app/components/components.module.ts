@@ -14,48 +14,31 @@ import {
   MProviderDemoComponent,
   HostDemoComponent,
   SomeDirDirective,
-  ProvidedInDemoComponent,
-  NgOnDestroyComponent
+  NgOnDestroyComponent,
+  DemoComponent
 } from '.';
 
-import { Highlight1Directive, Highlight2Directive } from '../directives';
-import { DemoComponent } from './12-ngOnDestroy-demo/demo.component';
+import { HighlightDirective } from '../directives';
+import { ProvidedInModule } from './05-providedIn/provided-in-demo.module';
+
+const dirs = [HighlightDirective, SomeDirDirective];
+const comp = [ElementRefDemoComponent,
+  FactoryDemoComponent,
+  ExistingDemoComponent,
+  ValueDemoComponent,
+  ClassDemoComponent,
+  NoServiceFoundComponent,
+  TaskListComponent,
+  TaskListOrderedComponent,
+  ForwardRefDemoComponent,
+  MProviderDemoComponent,
+  HostDemoComponent,
+  NgOnDestroyComponent,
+  DemoComponent];
 
 @NgModule({
-  imports: [CommonModule],
-  declarations: [
-    ElementRefDemoComponent,
-    FactoryDemoComponent,
-    ExistingDemoComponent,
-    ValueDemoComponent,
-    ClassDemoComponent,
-    NoServiceFoundComponent,
-    TaskListComponent,
-    TaskListOrderedComponent,
-    ForwardRefDemoComponent,
-    Highlight1Directive,
-    Highlight2Directive,
-    MProviderDemoComponent,
-    HostDemoComponent,
-    SomeDirDirective,
-    ProvidedInDemoComponent,
-    NgOnDestroyComponent,
-    DemoComponent
-  ],
-  exports: [
-    NoServiceFoundComponent,
-    ElementRefDemoComponent,
-    ValueDemoComponent,
-    ClassDemoComponent,
-    ExistingDemoComponent,
-    FactoryDemoComponent,
-    TaskListComponent,
-    TaskListOrderedComponent,
-    ForwardRefDemoComponent,
-    MProviderDemoComponent,
-    HostDemoComponent,
-    ProvidedInDemoComponent,
-    NgOnDestroyComponent
-  ]
+  imports: [CommonModule, ProvidedInModule],
+  declarations: [ ...comp, ...dirs ],
+  exports: [...comp]
 })
-export class ComponentsModule {}
+export class ComponentsModule { }

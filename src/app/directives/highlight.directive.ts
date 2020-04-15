@@ -7,11 +7,11 @@ import {
 } from '@angular/core';
 
 @Directive({
-  selector: '[appHighlight2]'
+  selector: '[appHighlight]'
 })
-export class Highlight2Directive {
+export class HighlightDirective {
   // tslint:disable-next-line:no-input-rename
-  @Input('appHighlight2') color: string;
+  @Input('appHighlight') color: string;
 
   constructor(private el: ElementRef, private render: Renderer2) {}
 

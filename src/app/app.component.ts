@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ChildDataService } from './services/child-data.service';
 import { DataService } from './services/data.service';
 
@@ -9,11 +9,6 @@ import { DataService } from './services/data.service';
     { provide: ChildDataService, useClass: DataService }
   ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'app works!';
-
-  constructor() {}
-
-  ngOnInit() {
-  }
 }

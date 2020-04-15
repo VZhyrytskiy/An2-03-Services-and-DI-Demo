@@ -7,5 +7,4 @@ export class ArrayDataService {
   }
 }
 
-
 export const adsInstance = new ArrayDataService();

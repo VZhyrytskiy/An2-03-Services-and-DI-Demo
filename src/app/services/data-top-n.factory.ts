@@ -1,13 +1,13 @@
 import { InjectionToken } from '@angular/core';
 import { DataService } from '.';
 
-export const DataTop3 = new InjectionToken<any[]>('DataTop3');
+export const DataTop3 = new InjectionToken<number[]>('DataTop3');
 
 export function DataTopNFactory(take: number) {
-  return (data: DataService): any[] =>
+  return (data: DataService): number[] =>
     data
       .getAllData()
-      .sort((a, b) => b - a)
+      .sort((a: number, b: number) => b - a)
       .filter((elem, index) => {
         return index < take;
       });

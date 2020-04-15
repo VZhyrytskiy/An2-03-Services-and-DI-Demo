@@ -12,7 +12,7 @@ export class SomeDirDirective implements OnInit {
     private ds: DataService
   ) // Host комонент - это обычно компонент, который запрашивает зависимость
   // но для компонента, который проецируется, это компонент, в который он проецируется
-  {}
+    {}
 
   ngOnInit() {
     console.log(this.ds ? this.ds.getData() : 'null');
