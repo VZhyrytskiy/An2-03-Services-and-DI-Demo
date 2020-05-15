@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
+import { ProvidedInModule } from './components';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ComponentsModule
+    ComponentsModule,
+    ProvidedInModule
   ],
   bootstrap: [AppComponent]
 })
