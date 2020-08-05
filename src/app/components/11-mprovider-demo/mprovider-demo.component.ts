@@ -14,7 +14,7 @@ export class Token {}
 export class MProviderDemoComponent implements OnInit {
   content = '';
 
-  constructor(@Inject(Token) private services: string[]) {}
+  constructor(@Inject(Token) private services: number[]) {}
 
   ngOnInit() {
     this.content = `${this.services[0]} ${this.services[1]}`;
