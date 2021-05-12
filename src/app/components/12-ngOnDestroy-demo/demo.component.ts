@@ -10,7 +10,7 @@ export class DemoComponent implements OnInit {
   content: string;
   constructor(private ngOnDestroyService: NgOnDestroyService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.content = this.ngOnDestroyService.getData();
   }
 }
