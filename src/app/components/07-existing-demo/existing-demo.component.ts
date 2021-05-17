@@ -19,7 +19,7 @@ export class ExistingDemoComponent implements OnInit {
     private myLoggerService: MyLoggerService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     console.log('useExisting:');
     console.log(Object.is(this.loggerService, this.myLoggerService));
     console.log(Object.is(this.logService, this.myLoggerService));

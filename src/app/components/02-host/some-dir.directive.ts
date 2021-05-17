@@ -14,7 +14,7 @@ export class SomeDirDirective implements OnInit {
   // но для компонента, который проецируется, это компонент, в который он проецируется
     {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     console.log(this.ds ? this.ds.getData() : 'null');
   }
 }

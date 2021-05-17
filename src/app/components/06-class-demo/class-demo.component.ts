@@ -13,7 +13,7 @@ export class ClassDemoComponent implements OnInit {
 
   constructor(private dataService: DataService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.content = this.dataService.getData();
   }
 }

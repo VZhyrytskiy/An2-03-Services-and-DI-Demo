@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class NgOnDestroyComponent {
   show = true;
 
-  toggle() {
+  toggle(): void {
     this.show = !this.show;
   }
 }

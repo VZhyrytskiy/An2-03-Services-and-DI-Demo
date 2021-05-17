@@ -13,11 +13,11 @@ export class TaskListComponent implements OnInit {
 
   constructor(private taskService: TaskService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.tasks = this.taskService.getTasks();
     this.afterGetTasks();
   }
 
   // Post-process tasks in derived class override.
-  protected afterGetTasks() {}
+  protected afterGetTasks(): void {}
 }

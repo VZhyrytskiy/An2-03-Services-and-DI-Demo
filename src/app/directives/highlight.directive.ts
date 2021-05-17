@@ -15,20 +15,20 @@ export class HighlightDirective implements OnInit {
 
   constructor(private el: ElementRef, private render: Renderer2) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     // возвращает все атрибуты компонента
     console.log(this.el.nativeElement.getAttributeNames());
   }
 
   @HostListener('mouseenter')
-  onMouseEnter() {
+  onMouseEnter(): void {
     this.highlight(this.color || 'lightgreen');
   }
   @HostListener('mouseleave')
-  onMouseLeave() {
+  onMouseLeave(): void {
     this.highlight(null);
   }
-  private highlight(color: string) {
+  private highlight(color: string): void {
     this.render.setStyle(this.el.nativeElement, 'backgroundColor', color);
   }
 }

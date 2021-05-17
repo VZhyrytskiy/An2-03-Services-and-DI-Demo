@@ -21,7 +21,7 @@ export class ValueDemoComponent implements OnInit {
     private adsIn: ArrayDataService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.content = this.adsIn.getAllData().toString();
   }
 }

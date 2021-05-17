@@ -14,7 +14,7 @@ export class ConfigService {
     console.log('new instance is created');
   }
 
-  getValue() {
+  getValue(): Config {
     return this.config;
   }
 }

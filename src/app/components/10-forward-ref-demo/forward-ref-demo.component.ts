@@ -13,7 +13,7 @@ export class ForwardRefDemoComponent implements OnInit {
     private door: DoorService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.content = this.door.lock.type;
   }
 

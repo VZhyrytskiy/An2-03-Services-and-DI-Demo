@@ -3,7 +3,7 @@ import { DataService } from '.';
 
 export const DataTop3 = new InjectionToken<number[]>('DataTop3');
 
-export function DataTopNFactory(take: number) {
+export function DataTopNFactory(take: number): (data: DataService) => number[] {
   return (data: DataService): number[] =>
     data
       .getAllData()

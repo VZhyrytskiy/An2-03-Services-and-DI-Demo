@@ -14,7 +14,7 @@ export class TaskListOrderedComponent extends TaskListComponent {
     super(taskService);
   }
 
-  afterGetTasks() {
+  afterGetTasks(): void {
     this.tasks = this.tasks.sort((t1: TaskModel, t2: TaskModel) => {
       return t1.action < t2.action ? -1 : t1.action > t2.action ? 1 : 0;
     });
