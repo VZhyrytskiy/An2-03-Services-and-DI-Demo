@@ -1,4 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
+import { RandomService, RandomToken } from 'src/app/services/random.service';
 
 import { DataTopNFactory, DataTop3, DataService } from '../../services';
 
@@ -13,9 +14,11 @@ import { DataTopNFactory, DataTop3, DataService } from '../../services';
 })
 export class FactoryDemoComponent implements OnInit {
   content: string;
-  constructor(@Inject(DataTop3) private dataTop3: any[]) {}
+  constructor(@Inject(DataTop3) private dataTop3: any[],
+              @Inject(RandomToken) private randomNumber: number,
+              private rs: RandomService) {}
 
-  ngOnInit() {
-    this.content = `DataTop3: ${this.dataTop3}`;
+  ngOnInit(): void {
+    this.content = `DataTop3: ${this.dataTop3} ${this.randomNumber} ${this.rs.generate()}`;
   }
 }
