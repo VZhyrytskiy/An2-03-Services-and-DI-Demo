@@ -14,7 +14,7 @@ const TITLE = new InjectionToken<string>('title');
   ]
 })
 export class ValueDemoComponent implements OnInit {
-  content: string;
+  content!: string;
 
   constructor(
     @Inject(TITLE) public ttl: string,

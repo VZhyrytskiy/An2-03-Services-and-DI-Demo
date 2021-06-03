@@ -11,7 +11,7 @@ import {
   selector: '[appHighlight]'
 })
 export class HighlightDirective implements OnInit {
-  @Input('appHighlight') color: string;
+  @Input('appHighlight') color!: string;
 
   constructor(private el: ElementRef, private render: Renderer2) {}
 
@@ -28,7 +28,7 @@ export class HighlightDirective implements OnInit {
   onMouseLeave(): void {
     this.highlight(null);
   }
-  private highlight(color: string): void {
+  private highlight(color: string | null): void {
     this.render.setStyle(this.el.nativeElement, 'backgroundColor', color);
   }
 }

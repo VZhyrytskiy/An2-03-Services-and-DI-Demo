@@ -13,10 +13,13 @@ import { DataTopNFactory, DataTop3, DataService } from '../../services';
   ]
 })
 export class FactoryDemoComponent implements OnInit {
-  content: string;
-  constructor(@Inject(DataTop3) private dataTop3: any[],
-              @Inject(RandomToken) private randomNumber: number,
-              private rs: RandomService) {}
+  content!: string;
+
+  constructor(
+    @Inject(DataTop3) private dataTop3: any[],
+    @Inject(RandomToken) private randomNumber: number,
+    private rs: RandomService
+  ) {}
 
   ngOnInit(): void {
     this.content = `DataTop3: ${this.dataTop3} ${this.randomNumber} ${this.rs.generate()}`;

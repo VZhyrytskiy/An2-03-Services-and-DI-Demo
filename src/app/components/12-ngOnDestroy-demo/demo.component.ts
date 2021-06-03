@@ -7,7 +7,7 @@ import { NgOnDestroyService } from '../../services/ng-on-destroy.service';
   providers: [NgOnDestroyService]
 })
 export class DemoComponent implements OnInit {
-  content: string;
+  content = '';
   constructor(private ngOnDestroyService: NgOnDestroyService) {}
 
   ngOnInit(): void {

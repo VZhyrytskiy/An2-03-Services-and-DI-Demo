@@ -6,7 +6,6 @@ export class NgOnDestroyService implements OnDestroy {
     return 'data';
   }
 
-  // tslint:disable-next-line:use-life-cycle-interface
   ngOnDestroy(): void {
     console.log('Demo Service is destroyed');
   }

@@ -1,5 +1,5 @@
 export abstract class MyLoggerService {
 
-   log: (d: any) => void;
+   abstract log(d: any): void;
 
 }

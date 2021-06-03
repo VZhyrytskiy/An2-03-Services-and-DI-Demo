@@ -9,7 +9,7 @@ import { DataService, ChildDataService } from '../../services';
   providers: [ChildDataService]
 })
 export class NoServiceFoundComponent implements OnInit {
-  content: string;
+  content!: string;
 
   constructor(
     // Case 1

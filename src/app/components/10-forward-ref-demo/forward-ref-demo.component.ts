@@ -7,7 +7,7 @@ import { DoorService } from '../../services';
   templateUrl: './forward-ref-demo.component.html'
 })
 export class ForwardRefDemoComponent implements OnInit {
-  content: string;
+  content!: string;
 
   constructor(
     private door: DoorService

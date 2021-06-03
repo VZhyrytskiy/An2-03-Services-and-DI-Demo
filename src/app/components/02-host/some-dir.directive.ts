@@ -9,12 +9,12 @@ export class SomeDirDirective implements OnInit {
     // Host компонент для директивы - это тег <p>
     @Host()
     @Optional()
-    private ds: DataService
+    private dataService: DataService
   ) // Host комонент - это обычно компонент, который запрашивает зависимость
   // но для компонента, который проецируется, это компонент, в который он проецируется
     {}
 
   ngOnInit(): void {
-    console.log(this.ds ? this.ds.getData() : 'null');
+    console.log(this.dataService ? this.dataService.getData() : 'null');
   }
 }

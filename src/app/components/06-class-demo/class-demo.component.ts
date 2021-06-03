@@ -9,7 +9,7 @@ import { DataService, ChildDataService } from '../../services';
   providers: [{ provide: DataService, useClass: ChildDataService }]
 })
 export class ClassDemoComponent implements OnInit {
-  content: string;
+  content!: string;
 
   constructor(private dataService: DataService) {}
 
