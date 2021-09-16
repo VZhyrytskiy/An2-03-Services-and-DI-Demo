@@ -15,13 +15,17 @@ import {
   HostDemoComponent,
   SomeDirDirective,
   NgOnDestroyComponent,
-  DemoComponent
+  DemoComponent,
+  CompSelfDecoratorDemoComponent,
+  DirSelfDecoratorDemoComponent,
+  CompComponent,
+  SelfDirDirective
 } from '.';
 
 import { HighlightDirective } from '../directives';
 import { ProvidedInModule } from './05-providedIn/provided-in-demo.module';
 
-const dirs = [HighlightDirective, SomeDirDirective];
+const dirs = [HighlightDirective, SomeDirDirective, SelfDirDirective];
 const comp = [ElementRefDemoComponent,
   FactoryDemoComponent,
   ExistingDemoComponent,
@@ -34,7 +38,10 @@ const comp = [ElementRefDemoComponent,
   MProviderDemoComponent,
   HostDemoComponent,
   NgOnDestroyComponent,
-  DemoComponent];
+  DemoComponent,
+  DirSelfDecoratorDemoComponent,
+  CompSelfDecoratorDemoComponent,
+  CompComponent];
 
 @NgModule({
   imports: [CommonModule, ProvidedInModule],

@@ -1,4 +1,7 @@
-export * from './01-no-service-found-demo/no-service-found.component';
+export * from './01.01-no-service-found-demo/no-service-found.component';
+
+export * from './01.02-self-decorator/component-demo';
+export * from './01.02-self-decorator/directive-demo';
 
 export * from './02-host/host-demo.component';
 export * from './02-host/some-dir.directive';
