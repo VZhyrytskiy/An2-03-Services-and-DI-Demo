@@ -24,7 +24,11 @@ export * from './09-derived-class/task-list-ordered/task-list-ordered.component'
 
 export * from './10-forward-ref-demo/forward-ref-demo.component';
 
-export * from './11-mprovider-demo/mprovider-demo.component';
+export * from './11.1-viewprovider-demo/child-content/child-content.component';
+export * from './11.1-viewprovider-demo/child-view/child-view.component';
+export * from './11.1-viewprovider-demo/parent-content.component';
+
+export * from './11.2-mprovider-demo/mprovider-demo.component';
 
 export * from './12-ngOnDestroy-demo/ng-on-destroy.component';
 export * from './12-ngOnDestroy-demo/demo.component';

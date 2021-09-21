@@ -19,7 +19,10 @@ import {
   CompSelfDecoratorDemoComponent,
   DirSelfDecoratorDemoComponent,
   CompComponent,
-  SelfDirDirective
+  SelfDirDirective,
+  ChildContentComponent,
+  ChildViewComponent,
+  ParentContentComponent
 } from '.';
 
 import { HighlightDirective } from '../directives';
@@ -41,7 +44,11 @@ const comp = [ElementRefDemoComponent,
   DemoComponent,
   DirSelfDecoratorDemoComponent,
   CompSelfDecoratorDemoComponent,
-  CompComponent];
+  CompComponent,
+  ChildContentComponent,
+  ChildViewComponent,
+  ParentContentComponent
+];
 
 @NgModule({
   imports: [CommonModule, ProvidedInModule],
