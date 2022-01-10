@@ -28,9 +28,9 @@ export class NoServiceFoundComponent implements OnInit {
   {}
 
   ngOnInit(): void {
-    const s1 = this.s1 ? this.s1.getData() : 'Service s1 not found.';
-    const s2 = this.s2 ? this.s2.getData() : 'Service s2 not found.';
-    const s3 = this.s3 ? this.s3.getData() : 'Service s3 not found.';
+    const s1 = this.s1?.getData() ?? 'Service s1 not found.';
+    const s2 = this.s2?.getData() ?? 'Service s2 not found.';
+    const s3 = this.s3?.getData() ?? 'Service s3 not found.';
 
     this.content = `s1: ${s1}<br> s2: ${s2}<br>s3: ${s3}`;
   }
