@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { configToken } from './../shared/config.token';
-import { Config } from '../shared/config.interface';
+import { type Config } from '../shared/config.interface';
 
 @Injectable({
   // one service instance for all modules

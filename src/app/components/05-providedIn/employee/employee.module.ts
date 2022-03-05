@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { EmployeeRoutingModule } from './employee-routing.module';
 import { EmployeeComponent } from './employee.component';
 import { configToken } from '../shared/config.token';
-import { Config } from '../shared/config.interface';
+import { type Config } from '../shared/config.interface';
 
 export const configValue: Config = {
   apiEndPoint: 'abc.com',

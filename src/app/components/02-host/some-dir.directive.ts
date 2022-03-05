@@ -1,4 +1,4 @@
-import { Directive, Optional, Host, OnInit } from '@angular/core';
+import { Directive, Optional, Host, type OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 
 @Directive({

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, type OnInit } from '@angular/core';
 import { NgOnDestroyService } from '../../services/ng-on-destroy.service';
 
 @Component({

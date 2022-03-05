@@ -1,4 +1,4 @@
-import { Injectable, OnDestroy } from '@angular/core';
+import { Injectable, type OnDestroy } from '@angular/core';
 
 @Injectable()
 export class NgOnDestroyService implements OnDestroy {

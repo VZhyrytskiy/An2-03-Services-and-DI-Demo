@@ -1,6 +1,6 @@
-import { Component, OnInit, InjectionToken, Inject } from '@angular/core';
+import { Component, type OnInit, InjectionToken, Inject } from '@angular/core';
 
-export class Token {}
+const Token = new InjectionToken('Token');
 
 @Component({
   selector: 'app-mprovider-demo',

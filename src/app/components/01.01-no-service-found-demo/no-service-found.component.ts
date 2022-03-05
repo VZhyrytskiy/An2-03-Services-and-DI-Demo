@@ -1,4 +1,4 @@
-import { Component, OnInit, Host, Optional, SkipSelf } from '@angular/core';
+import { Component, type OnInit, Host, Optional, SkipSelf } from '@angular/core';
 
 import { DataService, ChildDataService } from '../../services';
 

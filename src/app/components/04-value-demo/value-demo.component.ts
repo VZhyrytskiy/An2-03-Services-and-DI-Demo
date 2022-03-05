@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, InjectionToken } from '@angular/core';
+import { Component, type OnInit, Inject, InjectionToken } from '@angular/core';
 
 import { ArrayDataService, adsInstance } from '../../services';
 

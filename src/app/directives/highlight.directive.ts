@@ -3,7 +3,7 @@ import {
   ElementRef,
   HostListener,
   Input,
-  OnInit,
+  type OnInit,
   Renderer2
 } from '@angular/core';
 

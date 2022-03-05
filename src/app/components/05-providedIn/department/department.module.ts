@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DepartmentRoutingModule } from './department-routing.module';
 import { configToken } from '../shared/config.token';
-import { Config } from '../shared/config.interface';
+import { type Config } from '../shared/config.interface';
 import { DepartmentComponent } from './department.component';
 
 export const configValue: Config = {

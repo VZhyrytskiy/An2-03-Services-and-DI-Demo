@@ -1,4 +1,4 @@
-import { Component, Directive, OnInit, Optional, Self } from '@angular/core';
+import { Component, Directive, type OnInit, Optional, Self } from '@angular/core';
 import { ChildDataService } from '../../services';
 
 @Component({
