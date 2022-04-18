@@ -4,7 +4,8 @@ import {
   HostListener,
   Input,
   type OnInit,
-  Renderer2
+  Renderer2,
+  Attribute
 } from '@angular/core';
 
 @Directive({
@@ -13,11 +14,18 @@ import {
 export class HighlightDirective implements OnInit {
   @Input('appHighlight') color!: string;
 
-  constructor(private el: ElementRef, private render: Renderer2) {}
+  constructor(
+    private el: ElementRef,
+    private render: Renderer2,
+    @Attribute('a') private a: string
+  ) {}
 
   ngOnInit(): void {
-    // возвращает все атрибуты компонента
+    // вернуть и вывести все атрибуты компонента
     console.log(this.el.nativeElement.getAttributeNames());
+
+    // вывести внедренный атрибут хост-компонента
+    console.log(`Value of injected attribute 'a': ${this.a}`);
   }
 
   @HostListener('mouseenter')

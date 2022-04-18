@@ -25,7 +25,7 @@ import {
   ParentContentComponent
 } from '.';
 
-import { HighlightDirective } from '../directives';
+import { HighlightDirective } from './03-inject-element-or-attribute/highlight.directive';
 import { ProvidedInModule } from './05-providedIn/provided-in-demo.module';
 
 const dirs = [HighlightDirective, SomeDirDirective, SelfDirDirective];

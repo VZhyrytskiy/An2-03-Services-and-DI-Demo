@@ -6,7 +6,7 @@ export * from './01.02-self-decorator/directive-demo';
 export * from './02-host/host-demo.component';
 export * from './02-host/some-dir.directive';
 
-export * from './03-element-ref-demo/element-ref-demo.component';
+export * from './03-inject-element-or-attribute/element-ref-demo.component';
 
 export * from './04-value-demo/value-demo.component';
 
