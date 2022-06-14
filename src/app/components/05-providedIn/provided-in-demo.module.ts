@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ProvidedInDemoComponent } from './provided-in-demo.component';
-import { type Config } from './shared/config.interface';
 import { configToken } from './shared/config.token';
 import { ProvidedInRoutingModule } from './provided-in-demo-routing.module';
+import { type Config } from './shared/config.interface';
 
 export const configValue: Config = {
   apiEndPoint: 'def.com',

@@ -1,6 +1,6 @@
-import { Component, type OnInit, Inject } from '@angular/core';
-import { RandomService, RandomToken } from 'src/app/services/random.service';
+import { Component, Inject, type OnInit } from '@angular/core';
 
+import { RandomService, RandomToken } from 'src/app/services/random.service';
 import { DataTopNFactory, DataTop3, DataService } from '../../services';
 
 @Component({

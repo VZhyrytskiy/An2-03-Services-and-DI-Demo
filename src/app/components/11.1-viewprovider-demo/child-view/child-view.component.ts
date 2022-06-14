@@ -1,4 +1,4 @@
-import { Component, type OnInit, Optional } from '@angular/core';
+import { Component, Optional, type OnInit } from '@angular/core';
 import { DataService, TaskService } from 'src/app/services';
 
 @Component({

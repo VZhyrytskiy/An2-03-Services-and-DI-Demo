@@ -1,5 +1,4 @@
-import { Component, type OnInit, Inject, InjectionToken } from '@angular/core';
-
+import { Component, Inject, InjectionToken, type OnInit } from '@angular/core';
 import { ArrayDataService, adsInstance } from '../../services';
 
 const TITLE = new InjectionToken<string>('title');

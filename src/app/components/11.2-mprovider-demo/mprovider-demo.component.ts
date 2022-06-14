@@ -1,4 +1,4 @@
-import { Component, type OnInit, InjectionToken, Inject } from '@angular/core';
+import { Component, InjectionToken, Inject, type OnInit } from '@angular/core';
 
 const Token = new InjectionToken('Token');
 
