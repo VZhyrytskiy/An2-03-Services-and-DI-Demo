@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
-import { ProvidedInModule } from './components';
 import { GenerateRandomNumber, RandomService, RandomToken } from './services/random.service';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { GenerateRandomNumber, RandomService, RandomToken } from './services/ran
   imports: [
     BrowserModule,
     ComponentsModule,
-    ProvidedInModule
   ],
   providers: [
     { provide: RandomToken, useFactory: GenerateRandomNumber(), deps: [RandomService] }

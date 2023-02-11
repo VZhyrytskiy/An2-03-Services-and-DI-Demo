@@ -22,14 +22,14 @@ import {
   SelfDirDirective,
   ChildContentComponent,
   ChildViewComponent,
-  ParentContentComponent
+  ParentContentComponent,
+  HighlightDirective
 } from '.';
 
-import { HighlightDirective } from './03-inject-element-or-attribute/highlight.directive';
-import { ProvidedInModule } from './05-providedIn/provided-in-demo.module';
 
 const dirs = [HighlightDirective, SomeDirDirective, SelfDirDirective];
-const comp = [ElementRefDemoComponent,
+const comp = [
+  ElementRefDemoComponent,
   FactoryDemoComponent,
   ExistingDemoComponent,
   ValueDemoComponent,
@@ -51,7 +51,7 @@ const comp = [ElementRefDemoComponent,
 ];
 
 @NgModule({
-  imports: [CommonModule, ProvidedInModule],
+  imports: [CommonModule],
   declarations: [ ...comp, ...dirs ],
   exports: [...comp]
 })
