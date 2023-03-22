@@ -4,6 +4,7 @@ import { DataService, ChildDataService } from '../../services';
 
 @Component({
   selector: 'app-no-service-found',
+  standalone: true,
   templateUrl: './no-service-found.component.html',
   styleUrls: ['./no-service-found.component.css'],
   providers: [ChildDataService]

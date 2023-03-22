@@ -12,15 +12,18 @@ export * from './03.02-class-demo/class-demo.component';
 export * from './03.03-existing-demo/existing-demo.component';
 export * from './03.04-factory-demo/factory-demo.component';
 
-export * from './04-derived-class/task-list/task-list.component';
-export * from './04-derived-class/task-list-ordered/task-list-ordered.component';
+export * from './04-inject-function/demo/demo1.component';
+export * from './04-inject-function/demo/demo2.directive';
 
-export * from './05-forward-ref-demo/forward-ref-demo.component';
+export * from './05-derived-class/task-list/task-list.component';
+export * from './05-derived-class/task-list-ordered/task-list-ordered.component';
 
-export * from './06.01-viewprovider-demo/child-content/child-content.component';
-export * from './06.01-viewprovider-demo/child-view/child-view.component';
-export * from './06.01-viewprovider-demo/parent-content.component';
-export * from './06.02-mprovider-demo/mprovider-demo.component';
+export * from './06-forward-ref-demo/forward-ref-demo.component';
 
-export * from './07-ngOnDestroy-demo/ng-on-destroy.component';
-export * from './07-ngOnDestroy-demo/demo.component';
+export * from './07.01-viewprovider-demo/child-content/child-content.component';
+export * from './07.01-viewprovider-demo/child-view/child-view.component';
+export * from './07.01-viewprovider-demo/parent-content.component';
+export * from './07.02-mprovider-demo/mprovider-demo.component';
+
+export * from './08-ngOnDestroy-demo/ng-on-destroy.component';
+export * from './08-ngOnDestroy-demo/demo.component';

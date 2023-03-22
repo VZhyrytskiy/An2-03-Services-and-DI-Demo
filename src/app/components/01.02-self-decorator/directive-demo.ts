@@ -2,28 +2,16 @@ import { Component, Directive, type OnInit, Optional, Self } from '@angular/core
 import { ChildDataService } from '../../services';
 
 @Component({
-  selector: 'app-dir-self-decorator-demo',
-  template: `
-    <app-comp appSelfDir></app-comp>
-    <p appSelfDir>p-demo works!</p>
-  `,
-  // providers: [ChildDataService]
-})
-export class DirSelfDecoratorDemoComponent {}
-
-
-
-@Component({
   selector: 'app-comp',
+  standalone: true,
   template: `Hi!`,
   // providers: [ChildDataService]
 })
 export class CompComponent {}
 
-
-
 @Directive({
   selector: '[appSelfDir]',
+  standalone: true,
   // providers: [ChildDataService]
 })
 export class SelfDirDirective implements OnInit {
@@ -37,4 +25,22 @@ export class SelfDirDirective implements OnInit {
     console.log(this.childDataService ? this.childDataService.getData() : 'ChildDataService is not found ');
   }
 }
+
+@Component({
+  selector: 'app-dir-self-decorator-demo',
+  standalone: true,
+  imports: [CompComponent, SelfDirDirective],
+  template: `
+    <app-comp appSelfDir></app-comp>
+    <p appSelfDir>p-demo works!</p>
+  `,
+  // providers: [ChildDataService]
+})
+export class DirSelfDecoratorDemoComponent {}
+
+
+
+
+
+
 

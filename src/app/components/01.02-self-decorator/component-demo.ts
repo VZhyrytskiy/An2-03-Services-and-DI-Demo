@@ -4,6 +4,7 @@ import { ChildDataService } from '../../services';
 
 @Component({
   selector: 'app-comp-self-decorator-demo',
+  standalone: true,
   template: `
     {{content}}
   `,

@@ -7,7 +7,6 @@ import {
   ExistingDemoComponent,
   ValueDemoComponent,
   ClassDemoComponent,
-  NoServiceFoundComponent,
   TaskListComponent,
   TaskListOrderedComponent,
   ForwardRefDemoComponent,
@@ -16,10 +15,6 @@ import {
   SomeDirDirective,
   NgOnDestroyComponent,
   DemoComponent,
-  CompSelfDecoratorDemoComponent,
-  DirSelfDecoratorDemoComponent,
-  CompComponent,
-  SelfDirDirective,
   ChildContentComponent,
   ChildViewComponent,
   ParentContentComponent,
@@ -27,14 +22,13 @@ import {
 } from '.';
 
 
-const dirs = [HighlightDirective, SomeDirDirective, SelfDirDirective];
+const dirs = [HighlightDirective, SomeDirDirective];
 const comp = [
   ElementRefDemoComponent,
   FactoryDemoComponent,
   ExistingDemoComponent,
   ValueDemoComponent,
   ClassDemoComponent,
-  NoServiceFoundComponent,
   TaskListComponent,
   TaskListOrderedComponent,
   ForwardRefDemoComponent,
@@ -42,9 +36,6 @@ const comp = [
   HostDemoComponent,
   NgOnDestroyComponent,
   DemoComponent,
-  DirSelfDecoratorDemoComponent,
-  CompSelfDecoratorDemoComponent,
-  CompComponent,
   ChildContentComponent,
   ChildViewComponent,
   ParentContentComponent
