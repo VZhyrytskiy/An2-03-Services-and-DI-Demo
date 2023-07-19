@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 
 import { TaskListComponent } from '../task-list/task-list.component';
 import { TaskService, type TaskModel } from '../../../services';
+import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-task-list-ordered',
+  standalone: true,
   templateUrl: './task-list-ordered.component.html',
   styleUrls: ['./task-list-ordered.component.css'],
-  providers: [TaskService]
+  providers: [TaskService],
+  imports: [NgForOf]
 })
 export class TaskListOrderedComponent extends TaskListComponent {
   constructor(taskService: TaskService) {
