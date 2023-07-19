@@ -5,6 +5,7 @@ import { DataTopNFactory, DataTop3, DataService } from '../../services';
 
 @Component({
   selector: 'app-factory-demo',
+  standalone: true,
   templateUrl: './factory-demo.component.html',
   styleUrls: ['./factory-demo.component.css'],
   providers: [

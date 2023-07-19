@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {
-  FactoryDemoComponent,
   TaskListComponent,
   TaskListOrderedComponent,
   ForwardRefDemoComponent,
@@ -16,7 +15,6 @@ import {
 
 
 const comp = [
-  FactoryDemoComponent,
   TaskListComponent,
   TaskListOrderedComponent,
   ForwardRefDemoComponent,

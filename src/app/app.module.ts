@@ -5,7 +5,7 @@ import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
 import { GenerateRandomNumber, RandomService, RandomToken } from './services/random.service';
-import { DirSelfDecoratorDemoComponent, CompSelfDecoratorDemoComponent, NoServiceFoundComponent, Demo1Component, Demo2Directive, HostDemoComponent, ElementRefDemoComponent, ValueDemoComponent, ClassDemoComponent, ExistingDemoComponent  } from './components';
+import { DirSelfDecoratorDemoComponent, CompSelfDecoratorDemoComponent, NoServiceFoundComponent, Demo1Component, Demo2Directive, HostDemoComponent, ElementRefDemoComponent, ValueDemoComponent, ClassDemoComponent, ExistingDemoComponent, FactoryDemoComponent  } from './components';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { DirSelfDecoratorDemoComponent, CompSelfDecoratorDemoComponent, NoServic
     ElementRefDemoComponent,
     ValueDemoComponent,
     ClassDemoComponent,
-    ExistingDemoComponent
+    ExistingDemoComponent,
+    FactoryDemoComponent
   ],
   providers: [
     { provide: RandomToken, useFactory: GenerateRandomNumber(), deps: [RandomService] }
