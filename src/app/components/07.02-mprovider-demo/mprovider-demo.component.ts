@@ -4,6 +4,7 @@ const Token = new InjectionToken('Token');
 
 @Component({
   selector: 'app-mprovider-demo',
+  standalone: true,
   templateUrl: './mprovider-demo.component.html',
   styleUrls: ['./mprovider-demo.component.css'],
   providers: [
@@ -17,6 +18,8 @@ export class MProviderDemoComponent implements OnInit {
   constructor(@Inject(Token) private services: number[]) {}
 
   ngOnInit(): void {
-    this.content = `${this.services[0]} ${this.services[1]}`;
+    const [s1, s2] = this.services;
+
+    this.content = `${s1} ${s2}`;
   }
 }
