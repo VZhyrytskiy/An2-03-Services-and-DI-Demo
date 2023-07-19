@@ -1,14 +1,17 @@
 import { Component, Inject, InjectionToken, type OnInit } from '@angular/core';
 import { ArrayDataService, adsInstance } from '../../services';
 
-const TITLE = new InjectionToken<string>('title');
+const TITLE = new InjectionToken<string>('title', {
+  providedIn: 'root',
+  factory: () => 'Application'
+});
 
 @Component({
   selector: 'app-value-demo',
+  standalone: true,
   templateUrl: './value-demo.component.html',
   styleUrls: ['./value-demo.component.css'],
   providers: [
-    { provide: TITLE, useValue: 'Application' },
     { provide: ArrayDataService, useValue: adsInstance }
   ]
 })

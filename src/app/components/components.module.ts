@@ -2,10 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {
-  ElementRefDemoComponent,
   FactoryDemoComponent,
   ExistingDemoComponent,
-  ValueDemoComponent,
   ClassDemoComponent,
   TaskListComponent,
   TaskListOrderedComponent,
@@ -16,14 +14,12 @@ import {
   ChildContentComponent,
   ChildViewComponent,
   ParentContentComponent,
-  HighlightDirective
 } from '.';
 
 
 const comp = [
   FactoryDemoComponent,
   ExistingDemoComponent,
-  ValueDemoComponent,
   ClassDemoComponent,
   TaskListComponent,
   TaskListOrderedComponent,
