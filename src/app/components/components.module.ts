@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {
-  ForwardRefDemoComponent,
   MProviderDemoComponent,
   NgOnDestroyComponent,
   DemoComponent,
@@ -13,7 +12,6 @@ import {
 
 
 const comp = [
-  ForwardRefDemoComponent,
   MProviderDemoComponent,
   NgOnDestroyComponent,
   DemoComponent,
