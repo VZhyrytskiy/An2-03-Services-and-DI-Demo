@@ -11,8 +11,6 @@ import {
   TaskListOrderedComponent,
   ForwardRefDemoComponent,
   MProviderDemoComponent,
-  HostDemoComponent,
-  SomeDirDirective,
   NgOnDestroyComponent,
   DemoComponent,
   ChildContentComponent,
@@ -22,9 +20,7 @@ import {
 } from '.';
 
 
-const dirs = [HighlightDirective];
 const comp = [
-  ElementRefDemoComponent,
   FactoryDemoComponent,
   ExistingDemoComponent,
   ValueDemoComponent,
@@ -42,7 +38,7 @@ const comp = [
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [ ...comp, ...dirs ],
+  declarations: [ ...comp],
   exports: [...comp]
 })
 export class ComponentsModule { }
