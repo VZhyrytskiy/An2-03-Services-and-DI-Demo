@@ -22,7 +22,7 @@ import {
 } from '.';
 
 
-const dirs = [HighlightDirective, SomeDirDirective];
+const dirs = [HighlightDirective];
 const comp = [
   ElementRefDemoComponent,
   FactoryDemoComponent,
@@ -33,7 +33,6 @@ const comp = [
   TaskListOrderedComponent,
   ForwardRefDemoComponent,
   MProviderDemoComponent,
-  HostDemoComponent,
   NgOnDestroyComponent,
   DemoComponent,
   ChildContentComponent,

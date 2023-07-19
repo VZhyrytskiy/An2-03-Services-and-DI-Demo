@@ -2,7 +2,8 @@ import { Directive, Optional, Host, type OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 
 @Directive({
-  selector: '[appSomeDir]'
+  selector: '[appSomeDir]',
+  standalone: true
 })
 export class SomeDirDirective implements OnInit {
   constructor(
@@ -15,6 +16,6 @@ export class SomeDirDirective implements OnInit {
     {}
 
   ngOnInit(): void {
-    console.log(this.dataService ? this.dataService.getData() : 'null');
+    console.log(this.dataService ? this.dataService.getData() : null);
   }
 }
