@@ -5,7 +5,7 @@ import { Directive, ElementRef, HostListener, Input, Renderer2, Attribute, type 
 })
 export class HighlightDirective implements OnInit {
   // optional input
-  @Input('appHighlight') color!: string;
+  @Input({alias: 'appHighlight'}) color!: string;
 
   // dependencies
   private el: ElementRef = inject(ElementRef);
@@ -28,7 +28,7 @@ export class HighlightDirective implements OnInit {
   onMouseEnter(): void {
     this.highlight(this.color || 'lightgreen');
   }
-  
+
   @HostListener('mouseleave')
   onMouseLeave(): void {
     this.highlight(null);
