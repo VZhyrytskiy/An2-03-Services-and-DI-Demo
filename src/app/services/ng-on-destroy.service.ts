@@ -2,11 +2,15 @@ import { Injectable, type OnDestroy } from '@angular/core';
 
 @Injectable()
 export class NgOnDestroyService implements OnDestroy {
-  getData(): string {
-    return 'data';
+  constructor() {
+    console.log('Demo Service is created');
   }
 
   ngOnDestroy(): void {
     console.log('Demo Service is destroyed');
+  }
+
+  getData(): string {
+    return 'data';
   }
 }
