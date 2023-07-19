@@ -1,9 +1,10 @@
-import { Component, type OnInit } from '@angular/core';
+import { Component, inject, type OnInit } from '@angular/core';
 
 import { LoggerService, MyLoggerService, DataService } from '../../services';
 
 @Component({
   selector: 'app-existing-demo',
+  standalone: true,
   templateUrl: './existing-demo.component.html',
   styleUrls: ['./existing-demo.component.css'],
   providers: [
@@ -13,11 +14,9 @@ import { LoggerService, MyLoggerService, DataService } from '../../services';
   ]
 })
 export class ExistingDemoComponent implements OnInit {
-  constructor(
-    private loggerService: LoggerService,
-    private logService: DataService,
-    private myLoggerService: MyLoggerService
-  ) {}
+  private loggerService = inject(LoggerService);
+  private logService = inject(DataService);
+  private myLoggerService = inject(MyLoggerService);
 
   ngOnInit(): void {
     console.log('useExisting:');

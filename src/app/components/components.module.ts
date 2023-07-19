@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import {
   FactoryDemoComponent,
-  ExistingDemoComponent,
   TaskListComponent,
   TaskListOrderedComponent,
   ForwardRefDemoComponent,
@@ -18,7 +17,6 @@ import {
 
 const comp = [
   FactoryDemoComponent,
-  ExistingDemoComponent,
   TaskListComponent,
   TaskListOrderedComponent,
   ForwardRefDemoComponent,
