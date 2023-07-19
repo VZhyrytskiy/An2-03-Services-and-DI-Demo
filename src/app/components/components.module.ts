@@ -5,9 +5,6 @@ import {
   MProviderDemoComponent,
   NgOnDestroyComponent,
   DemoComponent,
-  ChildContentComponent,
-  ChildViewComponent,
-  ParentContentComponent,
 } from '.';
 
 
@@ -15,9 +12,6 @@ const comp = [
   MProviderDemoComponent,
   NgOnDestroyComponent,
   DemoComponent,
-  ChildContentComponent,
-  ChildViewComponent,
-  ParentContentComponent
 ];
 
 @NgModule({

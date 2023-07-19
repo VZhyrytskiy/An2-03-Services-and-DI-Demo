@@ -1,19 +1,18 @@
-import { Component, Optional, type OnInit } from '@angular/core';
+import { Component, Optional, type OnInit, inject } from '@angular/core';
 
 import { DataService, TaskService } from 'src/app/services';
 
 @Component({
   selector: 'app-child-content',
+  standalone: true,
   templateUrl: './child-content.component.html',
   styleUrls: ['./child-content.component.css']
 })
 export class ChildContentComponent implements OnInit{
   content!: string;
 
-  constructor(
-    @Optional() private dataService: DataService,
-    @Optional() private taskService: TaskService
-  ) {}
+  private dataService = inject(DataService);
+  private taskService = inject(TaskService, { optional: true });
 
   ngOnInit(): void {
     const r1 = this.dataService ? this.dataService.getData() : 'No DataService';
