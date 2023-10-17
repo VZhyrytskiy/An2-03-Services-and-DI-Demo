@@ -33,15 +33,20 @@ export class Demo1Component {
   content?: string;
 
   private dataService: DataService;
+  private dataTop3: number[];
+  private allData: number;
+
   // case 1: used in the initializer for fields
   private childDataService: ChildDataService = inject(ChildDataService);
 
   constructor(
-    @Inject(DataTop3) private dataTop3: number[],
-    @Inject(TokenAllData) private allData: number[]
+    // @Inject(DataTop3) private dataTop3: number[],
+    // @Inject(TokenAllData) private allData: number
   ) {
     // case 2: used in constructor
     this.dataService = inject(DataService);
+    this.dataTop3 = inject(DataTop3);
+    this.allData = inject(TokenAllData);
   }
 
   ngOnInit(): void {
